@@ -8,6 +8,9 @@
 </head>
 <body>
     <nav> 
+      <div class ="column">
+        <img src = "trebleclef.png">
+      </div>
         <a href = "#Home" title ="Home"> Home</a>
         <a href = "#Featured" title ="Featured Playlists"> Featured Playlists</a>
         <a href = "#Recommended" title="Recomended Albums"> Recomended Albums</a>
@@ -17,20 +20,18 @@
 
     <br id = "Home">
     <br>
-    <h2>Intro</h2>
+    <h2>Welcome to Melody</h2>
     <br>
     <div class = flexbox>
         <div>
-           <h4>Stream</h4> 
+           <h3>Stream</h3> 
+           <br>
            Let the Music Flow: Your Soundtrack, Anywhere You Go!
+           <br><br>
            <br>
-           <br>
-           <a href = "#Featured" title ="Featured Playlists" style="background-color: white;"> Featured Playlists</a>
+           <a id = "featured" href = "#Featured" title ="Featured Playlists" style="background-color: rgb(51, 96, 243); position:relative; top:30px;"> Featured Playlists</a>
         </div>
-        <div>
-            <img src="music-svgrepo-com.svg" >  
-        </div>
-
+        <img id = "introimg" src="music-svgrepo-com.svg" >  
     </div >
     <br id = "Featured">
     <br>
@@ -160,19 +161,20 @@
     <div class = "form">
     <form>
         <p a>Submit your review</p>
+        <br><hr><br>
         <label for="fname">First name:</label>
         <input type="text" id="fname" name="fname" value="John" width="250px"> &emsp;
         <label for="lname">Last name:</label>
-        <input type="text" id="lname" name="lname" value="Doe" width="250px"><br><br>
+        <input type="text" id="lname" name="lname" value="Doe" width="250px"><br><hr><br>
         <label for="phone">Phone Number:</label>
         <input type="tel" id = "phone", name = "phone" width="250px">
-        <br><br>
+        <br><hr><br>
         <label for="email">Email:</label>
         <input type="email" id = "email", name = "email" width="250px">
-        <br><br>
+        <br><hr><br>
         <label for="review">Review:</label>
         <textarea id = "review" name = "review"> </textarea>
-        <br><br>
+        <br><hr><br>
         <input type="submit" value="Submit">    
     </form>
     </div>
@@ -180,13 +182,13 @@
 
     <footer>
         <img src = "trebleclef.png">
-        <p> Follow us at 
-        <a href = "www.instagram.com"><img src = "insta-removebg-preview.png" height="30px" id = "social"></a>
-        <a href = "www.Facebook.com"><img src = "facebook-removebg-preview.png" id = "social" height="30px"></a>
-        <a href = "www.x.com"><img src = "x.svg" id = "social" height="20px"></a>
+        <p> Follow us at: &emsp;
+        <a href = "https://instagram.com"><img src = "insta-removebg-preview.png" height="30px" id = "social"></a>&emsp;
+        <a href = "https://Facebook.com"><img src = "facebook-removebg-preview.png" id = "social" height="30px"></a>&emsp;
+        <a href = "https://x.com"><img src = "x.svg" id = "social1" height="22px"></a>
         </p>
         <p>
-          <a href = "#" target="_blank">Terms and Conditions</a>
+          <a href = "#" target="_blank">Terms and Conditions</a>&emsp;&emsp;
           <a href = "#" target="_blank">Privacy Policy</a>
         </p>
         <p style="position: relative;"><a href = "#">Back to Top</a></p>

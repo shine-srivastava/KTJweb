@@ -2,7 +2,8 @@ html {
    scroll-behavior: smooth; 
   }
 body{
-    background-color: blueviolet;
+    background-color: rgb(53, 49, 49);
+    color: rgb(255, 255, 255);
 }
 
 #logo{
@@ -15,52 +16,80 @@ nav{
     right: 0px;
     top: 0px;
     position: fixed;
-    background-color: aqua;
+    background-color: rgb(53, 49, 49);
     width: 100%;
     text-align: right;
 }
+.column{
+  float:left;
+  width:0%;
+}
+.column>img{
+  width:50px;
+  height: auto;
+}
 
-a:link, a:visited {
-    background-color: aqua;
-    color: black;
+nav>a:link, a:visited {
+    background-color: rgb(53, 49, 49);
+    color: rgb(255, 255, 255);
     padding: 14px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
   }
   
-  a:hover, a:active {
-    background-color: red;
+#featured:hover, #featured:active {
+    background-color: rgb(51, 96, 243);
+  }
+
+#featured:link, #featured:visited {
+    background-color: rgb(53, 49, 49);
+    color: rgb(255, 255, 255);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+nav>  a:hover, a:active {
+    background-color: rgb(51, 96, 243);
   }
 
   h2,h3{
     text-align: center;
-    color: black;
+    color: rgb(255, 255, 255);
   }
 
   .flexbox{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: aqua;
+    background-color: rgb(51, 96, 243);
   }
 
   .flexbox > div{
-    background-color: #f1f1f1;
+    background-color: rgb(53, 49, 49);
     margin: 10px;
     text-align: center;
-
+    font-size: 20px;
     flex-grow: 1;
   }
 
-  .flexbox > div> h4{
+  .flexbox > div> h3{
     text-align: center;
-    color: black;
   }
   .flexbox > div> img{
     width: 200px;
     
   }
+
+#introimg{
+  width: 400px;
+  height:auto;
+  padding: 10px;
+  padding-right: 150px;
+  background-color: rgb(53, 49, 49);
+}
   .card {
     /* Add shadows to create the "card" effect */
     width: 80px;
@@ -79,10 +108,10 @@ a:link, a:visited {
   }
 
 #no{
-    color: rgb(37, 37, 35);
+    color: rgb(255, 255, 255);
     font-size: smaller;
     position: relative;
-    left: 90px;
+    left: 80px;
 }
 
 #searchbar {
@@ -111,7 +140,7 @@ a:link, a:visited {
 }
 
 .form{
-  background-color: #f2f2f2;
+  background-color: #5c5b5b;
   padding: 20px;
   border-style: solid;
   border-color: black;
@@ -124,7 +153,7 @@ textarea{
   height: 200px;
 }
 footer{
-  background-color: aqua;
+  background-color: rgb(53, 49, 49);
   position: relative;
   bottom: 0px;
   left: 0px;
@@ -137,15 +166,22 @@ footer>img{
   position: relative;
 }
 
-#social{
-  height: 30px;
-  width: auto;
-
-}
-
 footer>p{
   position: relative;
   text-align: center;
   bottom:200px;
-  align-items: baseline;
+}
+
+#social{
+  position: relative;
+  top: 10px;
+}
+#social1{
+  position: relative;
+  top: 6px;
+}
+
+#social:hover, #social1:hover{
+  height: 50px;
+  width:auto;
 }
